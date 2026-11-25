@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>B&amp;B I Gerani · Flumini di Quartu, a 8 km da Cagliari</title>
+<meta name="description" content="Bed and Breakfast I Gerani a Flumini di Quartu, dal 1998: giardino con gerani, camere con bagno privato e aria condizionata, colazione dolce salata. A 8 km da Cagliari e a pochi minuti dalle spiagge del Poetto e di Mari Pintau.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#B23A48">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23B23A48'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle'%3E%F0%9F%8C%BA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Sen:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<a class="skip" href="#prenota">Vai alla prenotazione</a>
+
+<header class="top" id="top">
+  <div class="top__in">
+    <a class="brand" href="#top" aria-label="B&amp;B I Gerani, torna su">
+      <span class="brand__flower" aria-hidden="true">✿</span>
+      <span class="brand__name">I Gerani</span>
+      <span class="brand__tag">B&amp;B · Flumini di Quartu</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Menu principale">
+      <a href="#bnb">Il B&amp;B</a>
+      <a href="#camere">Camere</a>
+      <a href="#colazione">Colazione</a>
+      <a href="#giardino">Giardino</a>
+      <a href="#dintorni">Dintorni</a>
+      <a href="#tariffe">Tariffe</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a class="btn btn--sm top__book" href="#prenota">Prenota</a>
+    <button class="burger" id="burger" aria-label="Apri il menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO + PRENOTAZIONE IN PRIMA POSIZIONE -->
+  <section class="hero" aria-label="Benvenuti">
+    <picture>
+      <img class="hero__img" src="img/bb/casa-esterno.jpeg" width="1024" height="627" alt="L'ingresso del B&amp;B I Gerani con il giardino di gerani al tramonto" fetchpriority="high">
+    </picture>
+    <div class="hero__text">
+      <p class="hero__kicker">Bed &amp; Breakfast · dal 1998</p>
+      <h1>i gerani in fiore, ogni estate</h1>
+      <p class="hero__sub">Una casa con giardino a Flumini di Quartu, a 8 km da Cagliari. Valeria e Gualtiero vi accolgono come in famiglia.</p>
+    </div>
+  </section>
+
+  <section class="prenota" id="prenota" aria-label="Prenotazione">
+    <form class="prenota__bar" id="prenotaForm">
+      <label>Arrivo<input type="date" id="inDate" required></label>
+      <label>Partenza<input type="date" id="outDate" required></label>
+      <label>Ospiti
+        <select id="ospiti">
+          <option value="1">1 persona</option>
+          <option value="2" selected>2 persone</option>
+          <option value="3">3 persone</option>
+          <option value="4">4 persone</option>
+          <option value="5">5 persone</option>
+          <option value="6">6 persone</option>
+        </select>
+      </label>
+      <button class="btn" type="submit">Verifica disponibilità</button>
+    </form>
+    <div class="prenota__risultato" id="prenotaRisultato" hidden>
+      <p class="prenota__titolo">Per verificare la disponibilità <strong id="prenotaSintesi"></strong>, chiamate o scrivete a Valeria e Gualtiero:</p>
+      <div class="prenota__azioni">
+        <a class="btn btn--wa" href="https://wa.me/393386752691?text=" id="waLink" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn" href="tel:+393386752691">Valeria · 338 6752691</a>
+        <a class="btn btn--ghost" href="tel:+393383787220">Gualtiero · 338 3787220</a>
+        <a class="btn btn--ghost" href="mailto:i.gerani@tiscali.it" id="mailLink">Email</a>
+      </div>
+      <p class="prenota__nota">Rispondiamo presto e confermiamo noi il prezzo per le vostre date.</p>
+    </div>
+  </section>
+
+  <!-- IL B&B -->
+  <section class="sec" id="bnb" aria-label="Il B&amp;B">
+    <div class="sec__in">
+      <p class="kicker">Benvenuti</p>
+      <h2>un giardino, una casa, una famiglia</h2>
+      <p class="lead">Il B&amp;B I Gerani è un villetta con un giardino curato, a Flumini di Quartu. Da più di venticinque anni ospitiamo chi viene per il mare, per Cagliari o per lavoro, con l'accoglienza di chi ama questa casa.</p>
+      <div class="stats" role="list">
+        <div class="stat" role="listitem"><span class="stat__n" data-count="25">0</span><span class="stat__t">anni di ospitalità</span></div>
+        <div class="stat" role="listitem"><span class="stat__n" data-count="800" data-suffix=" m">0</span><span class="stat__t">dalla spiaggia di Flumini</span></div>
+        <div class="stat" role="listitem"><span class="stat__n" data-count="8" data-suffix=" km">0</span><span class="stat__t">dal centro di Cagliari</span></div>
+      </div>
+      <figure class="fig fig--wide reveal">
+        <img src="img/bb/giardino-1.jpg" width="1024" height="531" loading="lazy" alt="Il giardino del B&amp;B I Gerani">
+        <figcaption>Il giardino, dove la colazione continua d'estate sotto il gazebo</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- CAMERE -->
+  <section class="sec sec--sand" id="camere" aria-label="Le camere">
+    <div class="sec__in">
+      <p class="kicker">Le camere</p>
+      <h2>camere semplici e confortevoli</h2>
+      <p class="lead">Tutte le camere hanno il bagno in esclusiva, l'aria condizionata, la TV, l'Hi-Fi e il Wi-Fi. Nel prezzo sono inclusi la colazione e la biancheria letto e bagno; la pulizia della camera è ogni tre giorni.</p>
+      <div class="cards cards--3">
+        <figure class="card reveal">
+          <img src="img/bb/camera.jpg" width="1024" height="528" loading="lazy" alt="Camera doppia con letto matrimoniale e armadi">
+          <figcaption>Camera doppia</figcaption>
+        </figure>
+        <figure class="card reveal">
+          <img src="img/bb/area-comune-5.jpg" width="1024" height="528" loading="lazy" alt="La sala comune con angolo lettura">
+          <figcaption>Sala comune e angolo lettura</figcaption>
+        </figure>
+        <figure class="card reveal">
+          <img src="img/bb/bagno.jpg" width="1024" height="528" loading="lazy" alt="Bagno privato con doccia">
+          <figcaption>Bagno in esclusiva</figcaption>
+        </figure>
+      </div>
+      <ul class="chips">
+        <li>Aria condizionata</li>
+        <li>Bagno privato</li>
+        <li>Wi-Fi</li>
+        <li>TV e Hi-Fi</li>
+        <li>Biancheria inclusa</li>
+        <li>Parcheggio gratuito</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- COLAZIONE -->
+  <section class="sec" id="colazione" aria-label="La colazione">
+    <div class="sec__in sec__in--2col">
+      <div class="reveal">
+        <p class="kicker">La colazione</p>
+        <h2>dolce e salata, con prodotti locali</h2>
+        <p>La colazione è servita nella sala colazioni o, d'estate, sotto il gazebo di legno nel giardino: torte, paste e dolci, con bevande calde e fredde.</p>
+        <p>È inclusa nel prezzo della camera. E se partite presto per il mare o per il volo, ditecelo: ci organizziamo.</p>
+      </div>
+      <figure class="fig reveal">
+        <img src="img/bb/colazione.jpg" width="1024" height="528" loading="lazy" alt="La colazione del B&amp;B I Gerani">
+        <figcaption>La sala colazioni, affacciata sul giardino</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- GIARDINO -->
+  <section class="sec sec--sand" id="giardino" aria-label="Il giardino">
+    <div class="sec__in">
+      <p class="kicker">Il giardino</p>
+      <h2>relax tra i gerani</h2>
+      <p class="lead">Ombrelloni, sedute all'ombra, un angolo giochi per i bambini: il giardino è il posto dove rilassarsi al rientro dal mare. Il momento migliore? L'ora del tramonto, quando la casa si accende.</p>
+      <div class="cards cards--3">
+        <figure class="card reveal"><img src="img/bb/gerani.jpg" width="1024" height="528" loading="lazy" alt="I gerani in fiore"><figcaption>I gerani, che danno il nome alla casa</figcaption></figure>
+        <figure class="card reveal"><img src="img/bb/giardino-2.jpg" width="1024" height="531" loading="lazy" alt="Il giardino del B&amp;B"><figcaption>Angoli di relax</figcaption></figure>
+        <figure class="card reveal"><img src="img/bb/giardino-3.jpg" width="1024" height="531" loading="lazy" alt="Il giardino del B&amp;B di sera"><figcaption>All'ora del tramonto</figcaption></figure>
+        <figure class="card reveal"><img src="img/bb/giardino-4.jpg" width="1024" height="531" loading="lazy" alt="Il gazebo nel giardino"><figcaption>Il gazebo per la colazione estiva</figcaption></figure>
+        <figure class="card reveal"><img src="img/bb/giardino-5.jpg" width="1024" height="531" loading="lazy" alt="Il giardino con le piante"><figcaption>Piante e ombra fresca</figcaption></figure>
+        <figure class="card reveal"><img src="img/bb/area-comune-8.jpg" width="1024" height="528" loading="lazy" alt="L'area esterna coperta"><figcaption>Lo spazio esterno coperto</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENSIONI -->
+  <section class="sec" id="recensioni" aria-label="Recensioni">
+    <div class="sec__in">
+      <p class="kicker">Gli ospiti dicono</p>
+      <div class="quotes">
+        <blockquote class="quote reveal">
+          <p>«La simpatia e la gentilezza dei gestori, attenti a ogni esigenza, molto disponibili e flessibili.»</p>
+          <cite>Ospite su Hotels.com</cite>
+        </blockquote>
+        <blockquote class="quote reveal">
+          <p>«Accoglienza calorosa e grande attenzione alle necessità degli ospiti.»</p>
+          <cite>Ospite su Expedia · soggiorno di 3 notti</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- DINTORNI -->
+  <section class="sec sec--sand" id="dintorni" aria-label="Cosa vedere">
+    <div class="sec__in">
+      <p class="kicker">I dintorni</p>
+      <h2>il mare e la città, entrambi a un passo</h2>
+      <p class="lead">Dal B&amp;B raggiungete in pochi minuti la spiaggia di Flumini, il lungomare del Poetto e il centro di Cagliari; verso est, le calette di Quartu e la costa di Villasimius.</p>
+      <div class="rail" tabindex="0" aria-label="Scorri per vedere i dintorni">
+        <figure class="rail__item"><img src="img/bb/spiaggia-flumini.jpg" width="1024" height="680" loading="lazy" alt="La spiaggia di Flumini"><figcaption>La spiaggia di Flumini · pochi minuti a piedi</figcaption></figure>
+        <figure class="rail__item"><img src="img/zona/poetto-selladeldiavolo.jpg" width="1280" height="853" loading="lazy" alt="Il Poetto visto dalla Sella del Diavolo"><figcaption>Il Poetto dalla Sella del Diavolo</figcaption></figure>
+        <figure class="rail__item"><img src="img/zona/fenicotteri-molentargius.jpg" width="1280" height="850" loading="lazy" alt="I fenicotteri rosa nel Parco di Molentargius"><figcaption>I fenicotteri rosa di Molentargius</figcaption></figure>
+        <figure class="rail__item"><img src="img/zona/bastione-saint-remy.jpg" width="1280" height="850" loading="lazy" alt="Il Bastione di Saint Remy a Cagliari"><figcaption>Il Bastione di Saint Remy · Cagliari, 8 km</figcaption></figure>
+        <figure class="rail__item"><img src="img/zona/mari-pintau.jpg" width="1280" height="850" loading="lazy" alt="La cala di Mari Pintau"><figcaption>Cala Mari Pintau · verso Villasimius</figcaption></figure>
+        <figure class="rail__item"><img src="img/zona/golfo-geremeas.jpg" width="1280" height="850" loading="lazy" alt="Il Golfo di Geremeas"><figcaption>Golfo di Geremeas</figcaption></figure>
+        <figure class="rail__item"><img src="img/zona/sella-del-diavolo.jpg" width="1280" height="850" loading="lazy" alt="La Sella del Diavolo e il golfo degli Angeli"><figcaption>La Sella del Diavolo e il Golfo degli Angeli</figcaption></figure>
+      </div>
+      <p class="credits">Foto dei dintorni: Nilo1926, Einaz80, Laurettapossamai, Ramon Espiña Fernandez, Marco Walker, Ryan Hodnett — Wikimedia Commons, licenze CC BY-SA 4.0 / 3.0. Foto della spiaggia e della struttura: B&amp;B I Gerani.</p>
+    </div>
+  </section>
+
+  <!-- TARIFFE -->
+  <section class="sec" id="tariffe" aria-label="Tariffe">
+    <div class="sec__in">
+      <p class="kicker">Listino 2026</p>
+      <h2>tariffe oneste, tutto incluso</h2>
+      <p class="lead">Prezzi a persona per notte. Nel prezzo: colazione, biancheria letto e bagno, pulizia della camera (ogni tre giorni), aria condizionata, TV e Hi-Fi.</p>
+      <div class="tariffe">
+        <div class="tcard reveal">
+          <p class="tcard__t">Bassa stagione</p>
+          <p class="tcard__p">€ 30–40<span> a persona/notte</span></p>
+          <p class="tcard__d">Tutti i periodi fuori alta stagione</p>
+        </div>
+        <div class="tcard tcard--hl reveal">
+          <p class="tcard__t">Alta stagione</p>
+          <p class="tcard__p">€ 45–50<span> a persona/notte</span></p>
+          <p class="tcard__d">1° giugno – 30 settembre, Pasqua, Natale, Capodanno, 1–9 gennaio, 7–11 dicembre</p>
+        </div>
+        <div class="tcard reveal">
+          <p class="tcard__t">Famiglie</p>
+          <p class="tcard__p">Sconti<span> per bambini</span></p>
+          <p class="tcard__d">0–3 anni gratis · fino a 12 anni −50%</p>
+        </div>
+        <div class="tcard reveal">
+          <p class="tcard__t">Extra</p>
+          <p class="tcard__p">da −20%<span> a richiesta</span></p>
+          <p class="tcard__d">Lunghi soggiorni scontati (fuori luglio e agosto) · camera singola +20–30% · letto aggiunto −20%</p>
+        </div>
+      </div>
+      <p class="tariffe__orari">Check-in entro le 18:00 · Check-out entro le 11:00 (orari flessibili se accordati in precedenza)</p>
+    </div>
+  </section>
+
+  <!-- CONTATTI -->
+  <section class="sec sec--sand" id="contatti" aria-label="Contatti e come arrivare">
+    <div class="sec__in">
+      <p class="kicker">Dove siamo</p>
+      <h2>vi aspettiamo</h2>
+      <div class="contatti">
+        <div class="reveal">
+          <p><strong>B&amp;B I Gerani</strong><br>Via delle Speronelle 19<br>09045 Flumini di Quartu (CA), Sardegna</p>
+          <p>CIN: IT092051C1000E4105 · IUN E4105</p>
+          <p><a href="tel:+393386752691">Valeria · 338 6752691</a><br><a href="tel:+393383787220">Gualtiero · 338 3787220</a><br><a href="tel:+39070891870">Casa · 070 891870</a></p>
+          <p><a href="mailto:i.gerani@tiscali.it">i.gerani@tiscali.it</a><br><a href="https://www.facebook.com/igerani" target="_blank" rel="noopener">facebook.com/igerani</a></p>
+          <p><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Via+delle+Speronelle+19+Quartu+Sant%27Elena" target="_blank" rel="noopener">Apri in Google Maps</a></p>
+        </div>
+        <div class="reveal">
+          <h3>Come arrivare</h3>
+          <p><strong>In auto da Cagliari:</strong> seguendo il lungomare verso Quartu, in circa 15 minuti siete a Flumini; parcheggio gratuito davanti alla casa.</p>
+          <p><strong>Dall'aeroporto di Cagliari-Elmas:</strong> in auto verso Quartu Sant'Elena; Valeria e Gualtiero vi danno tutte le indicazioni al momento della prenotazione.</p>
+          <p><strong>Con i mezzi:</strong> gli autobus per e da Quartu Sant'Elena fermano nella zona; la spiaggia di Flumini è a pochi minuti a piedi.</p>
+          <h3>Servizi in zona</h3>
+          <p>Nella vicina Flumini trovate pizzerie, ristoranti, bar e supermercati; la spiaggia, con stabilimenti balneari e arenili liberi, è a pochi minuti a piedi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>© 1998–2026 B&amp;B I Gerani · Flumini di Quartu, Sardegna</p>
+  <p class="foot__credits">Foto dei dintorni: licenze libere CC BY-SA (Wikimedia Commons) — autori citati nella sezione Dintorni.</p>
+</footer>
+
+<div class="cta-bar" id="ctaBar">
+  <a class="cta-bar__btn cta-bar__btn--wa" href="https://wa.me/393386752691" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="cta-bar__btn" href="tel:+393386752691">Chiama Valeria</a>
+</div>
+
+<script src="app.js?v=1"></script>
+</body>
+</html>
