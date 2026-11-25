@@ -94,6 +94,8 @@ p+p{margin-top:.6em}
 .quote{background:#fff;border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);border-left:4px solid var(--ger)}
 .quote p{font-family:var(--font-t);font-size:1.15rem;font-style:italic}
 .quote cite{display:block;margin-top:12px;font-size:.85rem;color:var(--ink-soft);font-style:normal}
+.badge-score{display:inline-block;margin-top:18px;background:#fff;border:2px solid var(--ger);border-radius:999px;padding:.5em 1.2em;font-weight:700;color:var(--ink)}
+.badge-score strong{color:var(--ger)}
 
 /* rail dintorni */
 .rail{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:26px 4px;scrollbar-width:thin}
